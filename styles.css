@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #202124;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding: 0 18px;
+}
+header .options {
+    font-size: 13.3px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+header .options a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+header .options a:hover {
+    text-decoration: underline;
+}
+header .options a img {
+    width: 24px;
+    height: 24px;
+}
+header .options .user img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+main {
+    height: calc(100% - 60px - 90px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+main .container {
+    transform: translateY(-90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    /*background-color: grey;*/
+}
+main .container figure {
+    height: 92px;
+}
+main .container figure img {
+    height: 100%;
+}
+main .container p {
+    color: #BDC1C6;
+    font-size: 13px;
+}
+main .container p span {
+    color: #6FB4E4;
+}
+main .container p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+main .container .searcher {
+    display: flex;
+    height: 44px;
+    background: #202124;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 584px;
+}
+main .container .searcher:hover{
+    background: #303134;
+    box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+    border: none;
+}
+main .container .searcher .search-logo {
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+    margin-left: 10px;
+    background-image: url(/assets/search-logo.svg);
+}
+main .container .searcher input {
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    padding: 1px 2px;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    height: 34px;
+    width: 443px;
+    font-size: 16px;
+    margin-top: 4px;
+    cursor: text;
+}
+main .container .searcher button {
+    background-color: transparent;
+    border: 1px #303134;
+}
+main .container .searcher button:hover{
+    cursor: pointer;
+}
+
+.mic-logo {
+    display: inline-block;
+    background-image: url(/assets/mic-logo.svg);
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    margin-left: 21px;
+}
+.cam-logo {
+    display: inline-block;
+    background-image: url(/assets/cam-logo.svg);
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    margin-left: 18px;
+}
+.searcher-btns button{
+    background-color: #303134;
+    color: #e8eaed;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 2px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #303134;
+}
+.searcher-btns button:hover {
+    border: 1px solid #5f6368;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color: #171717;
+}
+footer section.info {
+    display: flex;
+    justify-content: space-between;
+}
+footer section.info div {
+    margin-top: 10px;
+}
+footer section.info div a {
+    text-decoration: none;
+    color: #9aa0a6;
+    justify-content: space-evenly;
+    font-size: 14px;
+    padding: 0 15px;
+    align-items: center;
+}
+footer section.info div a:hover {
+    text-decoration: underline;
+}
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #3c4043;
+    font-size: 15px;
+    color: #9aa0a6;
+}
